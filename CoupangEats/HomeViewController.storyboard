@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="Lmx-s6-CWg">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h9S-Od-dUd" userLabel="HomeViewController" customClass="HomeViewController" customModule="CoupangEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nhI-Y1-hHA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1478"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsm-bU-bpO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUR-rv-Ont">
+                                        <rect key="frame" x="362" y="30" width="44" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="semibold"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5625025428" green="0.79275491939999998" blue="0.79387620719999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rUR-rv-Ont" secondAttribute="bottom" constant="33" id="0sG-3f-iEw"/>
+                                    <constraint firstAttribute="height" constant="94" id="MwD-8T-QWj"/>
+                                    <constraint firstItem="rUR-rv-Ont" firstAttribute="leading" secondItem="qsm-bU-bpO" secondAttribute="leading" constant="362" id="OAJ-Tw-5gh"/>
+                                    <constraint firstAttribute="trailing" secondItem="rUR-rv-Ont" secondAttribute="trailing" constant="8" id="ViT-7F-HYJ"/>
+                                    <constraint firstItem="rUR-rv-Ont" firstAttribute="top" secondItem="qsm-bU-bpO" secondAttribute="top" constant="30" id="vNO-yF-iFx"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGF-Rg-gfM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="898"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="juO-r5-KpZ">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="1313"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="상단광고이미지8" translatesAutoresizingMaskIntoConstraints="NO" id="LRh-B2-Zst">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="주문 많은 맛집" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKa-l1-ynU">
+                                                <rect key="frame" x="37" y="322" width="114" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CatCV" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rhz-bn-UTp">
+                                                <rect key="frame" x="0.0" y="170" width="414" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aSM-U8-cAY">
+                                                    <size key="itemSize" width="114" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CatCell" id="aPa-lX-eaR" customClass="CategoryCollectionViewCell" customModule="CoupangEats" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yLy-wu-yaX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="114" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-d0-eyH">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="99"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX1-BO-qxw">
+                                                                    <rect key="frame" x="36" y="107" width="42" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="114" height="128"/>
+                                                        <connections>
+                                                            <outlet property="catImgView" destination="Ri4-d0-eyH" id="h9e-e0-w2f"/>
+                                                            <outlet property="catLbl" destination="eX1-BO-qxw" id="5Tl-VP-Eot"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="76B-gM-qWp"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="IUt-Hn-fhe"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="22T-00-JJI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qsm-bU-bpO" firstAttribute="trailing" secondItem="22T-00-JJI" secondAttribute="trailing" id="9Q5-M0-qmb"/>
+                            <constraint firstItem="qsm-bU-bpO" firstAttribute="top" secondItem="nhI-Y1-hHA" secondAttribute="top" id="bKC-Ot-rpz"/>
+                            <constraint firstItem="qsm-bU-bpO" firstAttribute="leading" secondItem="22T-00-JJI" secondAttribute="leading" id="pW3-wr-DE6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" id="X6F-Fq-dNG" customClass="homeTabBarItem">
+                        <imageReference key="image" image="homekit" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <size key="freeformSize" width="414" height="1478"/>
+                    <connections>
+                        <outlet property="BannerImg" destination="LRh-B2-Zst" id="kBt-yK-8DF"/>
+                        <outlet property="CatCV" destination="Rhz-bn-UTp" id="l2V-JH-VOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVI-Bc-FQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.63768115942037" y="-637.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="상단광고이미지8" width="375" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
