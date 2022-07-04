@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Stella🌟
-- 👀 I’m interested in front-end developers
+- 👀 I’m interested in front-end development
 - 🌱 I’m currently learning HTML/CSS/JS
 
 <!---
