@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Stella🌟
 - 👀 I’m interested in front-end development
-- 🌱 I’m currently learning HTML/CSS/JS
+- 🌱 I’m currently learning JS/React
 
 <!---
 hastella/hastella is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
